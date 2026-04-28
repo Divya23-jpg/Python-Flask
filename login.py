@@ -45,3 +45,6 @@ def welcome():
 def logout():
     session.pop("user",None) # delte user
     return redirect(url_for("login"))
+
+
+# Project 1 done
