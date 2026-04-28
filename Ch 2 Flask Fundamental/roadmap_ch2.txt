@@ -1,0 +1,25 @@
+
+Building a Flask Login System
+
+Build Login System:
+    implement a mini project to create a login System
+
+Flask Core Objects:
+    Explore imp flask objects like req / res
+
+Understand HTTO Methods:
+    Diff btw GET and Post Methods
+    GET                     POST
+    Get data            To send data
+    Give me something   Data  Information send to server
+    dont send Info      It does something ex: login
+
+    
+Create first App:
+    Develop initial flask app with basic routes
+
+Install Flask:
+    Set up the environment and virtual Env
+
+
+

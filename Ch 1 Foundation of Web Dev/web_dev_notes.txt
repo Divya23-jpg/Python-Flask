@@ -1,0 +1,84 @@
+Foundation Before Flast
+
+1. Website:
+    collection of web pagaes on which we can visit using a browser
+
+2. Web Application:
+    It is also a websites but we can perform many activities like search,login
+    Take an Example
+    
+    Restuarant - Web Application
+    Customer - Your browser
+    Menu - website buttons/forms
+    Order - Request
+    Water - Flask route (Python code)
+    chef - Server/Backend logic
+    food Response (HTML, Page, data)
+
+
+3. Server:
+    A server is simply a computer or software system that provides services, data, or resources to other computers (called clients) over a network. 
+    It listens for requests, processes them, and sends back responses—like delivering a webpage when you open a site in your browser
+
+4.Backend:
+    Hidden part for the user 
+
+5.Python Limitation:
+    Dont know to connect browser 
+
+6.Framework 
+   It  is a structured foundation or set of tools, libraries, and guidelines that developers use to build software applications more efficiently.
+   Example : Readymade tool box  like flask in Python
+   
+
+7.Flask Benefit:
+    Easy for Beginer 
+
+8.Request/Response Cycle
+    1.sends a requests to server
+    2.server receives the requests
+    3.server process the response
+    4.server sends back a response4
+    5.Displays Response as a webpage
+
+9.Status Code in response like small note "error" or "Login Succes"
+
+some important Code with meaning and explanation
+
+Code      Meaning                       Explanation
+200        Ok                          Everything went well
+404        Not Found                   Page Does not found
+500        Internal Server Error        Server Crashed
+301        Moved permanentaly           Page have moved to another URL
+403        forbidden                    You are not allowed to see this
+
+
+10.Browser:
+    A browser is a software application that lets you access and interact with information on the internet.
+    ex: Crome,firefox etc
+
+11.URL[Uniform Resource Locator]
+    A URL is the unique web address of a page, file, or resource online.
+    It tells the browser where to find the resource and how to access it.
+    
+    Exam:https://www.example.com:443/path/page.html?search=python#section2
+
+    part                        MEANING
+   https://	Protocol     (how to access: HTTP/HTTPS)
+   www.example.com	     Domain name (server address)
+   :443	Port number      (optional, default for HTTPS)
+   /path/page.html	     File path (location of resource)
+   ?search=python	     Query string (parameters sent to server)
+   #section2	         Fragment (specific part of the page)
+
+12.Web Browser:
+    A web browser is the tool you use to surf the internet.
+
+
+13.What is Flask and what do for us??
+    what you want to do                   What Flask gives you
+    Show page to user                   @app.route()+return HTML
+    React to click or form submit       Flask reads the input 
+    Show data line name or product      Helps you build pages using templates
+    Handle Logins , session             Helps you track users easily
+    Connect to a database               Works with tools to store data

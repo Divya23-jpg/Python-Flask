@@ -1,0 +1,6 @@
+Features of LOGIN SYSTEM
+
+1. Show LOGIn page
+2.Accept Username and password
+3.Store login data in a session
+4.when store succesful the redirect to welcome page
