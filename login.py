@@ -16,14 +16,14 @@ def login():
 
         else:
             # mimetype="tesxt/plain gives html 
-            return Response("In_valid Credentials,Try Again",mimetype="tesxt/plain")
+            return Response("In_valid Credentials,Try Again",mimetype="text/plain")
         
     return'''
         <h2>Login Page</h2>
-        <form>method="POST
+        <form method="POST>
         Username : <input type="text" name="username"><br>
-        Password : input type="text" name="password"><br>
-        input type="submit" value="Login">
+        Password : <input type="text" name="password"><br>
+        <input type="submit" value="Login">
         </form>
 '''
 
@@ -33,7 +33,7 @@ def login():
 def welcome():
     if "user" in session:
         return f'''
-            <h2>Welcome,{session["user"]}!</h2>
+            <h2> Welcome,{session["user"]}!</h2>
             <a hred={url_for('logout')}>Logout</a>
     '''
     return redirect(url_for("login"))
