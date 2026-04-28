@@ -4,3 +4,8 @@ Features of LOGIN SYSTEM
 2.Accept Username and password
 3.Store login data in a session
 4.when store succesful the redirect to welcome page
+
+
+for Run env file use
+$env:FLASK_APP = "login.py"  login.py is the file where we write a flask code or where we create a environment
+flask run
