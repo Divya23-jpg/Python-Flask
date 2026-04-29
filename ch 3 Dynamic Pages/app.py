@@ -8,5 +8,5 @@ def student_profile():
         "profile.html",
         name="Arun",
         is_topper=True,
-        subjecst=["Maths","Science","History"]
+        subjects=["Maths","Science","History"]
         )
