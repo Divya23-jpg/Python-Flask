@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     
-    <title>Login Page</title>
+    <title>{% block title} Login Page {% endblock%}</title>
 </head>
-
+<body>
 <form  action="/submit" method="POST">
     <label>Username</label>
     <input type="text" name="username" placeholder="Enter Your Username"><br><br>
@@ -15,7 +15,5 @@
     <input type="submit" value="Login">
 
 </form>
-
-<body>
 </body>
 </html>

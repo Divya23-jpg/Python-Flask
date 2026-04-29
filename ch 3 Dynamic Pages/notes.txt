@@ -29,3 +29,17 @@ Integration with Flask: Flask’s render_template() function passes Python data 
     <p>Your are need to work hard </p>
 
 3.Loop
+      {% for subject in subjects %}
+        <li>{{subject}}</li>
+        {% endfor %}
+
+
+Template inheritance in Jinja2 (used in Flask) is a way to create a base “parent” HTML file and let other “child” templates extend it, 
+so you avoid repeating common code like headers, footers, or navigation bars.
+
+🔑 How It Works
+Base Template: Defines the overall structure (e.g., layout, CSS, navigation).
+
+Blocks: Marked sections ({% block content %}{% endblock %}) that child templates can override.
+
+Child Template: Uses {% extends "base.html" %} to inherit the parent and fills in the blocks.
