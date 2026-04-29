@@ -1,0 +1,31 @@
+JINJA
+
+Jinja2 in Flask is the built-in templating engine that lets you embed Python-like expressions,
+variables, and control structures directly inside HTML files, enabling dynamic web pages. 
+It comes bundled with Flask, so you don’t need to install it separately.
+
+
+What Jinja2 Does in Flask
+Dynamic Content Rendering: Insert Python variables into HTML using {{ variable }}.
+
+Control Structures: Use {% if %}, {% for %}, and other statements to add logic inside templates.
+
+Template Inheritance: Create base layouts (layout.html) and extend them in child templates for reusability.
+
+Autoescaping: Protects against XSS by automatically escaping special characters in HTML/XML output.
+
+Integration with Flask: Flask’s render_template() function passes Python data into Jinja2 templates.
+
+
+1.For Python Variable:
+    {{variable}}
+    ex: {{name}}
+
+2.Condition
+    is_topper=True
+    {%if is_topper %}
+    <p>Your are topper </p>
+    {% else %}
+    <p>Your are need to work hard </p>
+
+3.Loop
