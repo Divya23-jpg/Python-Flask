@@ -1,0 +1,10 @@
+User Input
+    |
+1. Manual form Handling       2.Flask WTF
+    |                                  |
+Flash Message           Form Classes  Field Types CSRF protection Built in validation
+    |
+Redirect After Submission
+
+
+1. Manual form Handling  with request.form:
