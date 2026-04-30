@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        {% block title %} My Feedback Site{% endblock%}
+    </title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif; padding: 20px;background-color: white;}
+        header,footer {background-color: #333;padding: 10px;color: white;text-align: center;}
+        nav a {margin: 0 10 px; color: white; text-decoration: none;}
+        main{
+            background-color: white;padding: 20px;margin-top: 20px;border-radius:5px ;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Feedback Page</h1>
+        <nav>
+            <a href="feedback.html"></a>
+        </nav>
+    </header>
+    <main>
+    {% block  content %}
+        
+    {% endblock %}
+    </main>
+
+    <footer>
+        <p>
+            & I AM LEARNING FLASK WITH SAGAR SIR
+        </p>
+        
+    </footer>
+</body>
+</html>
