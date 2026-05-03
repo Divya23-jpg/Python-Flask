@@ -8,3 +8,10 @@ Redirect After Submission
 
 
 1. Manual form Handling  with request.form:
+
+
+flash messages:
+Ex:
+we take out paymnent from ATM after taking money message shows transaction successfull
+This is a one time msg
+    flash()+get_flashed_message()
