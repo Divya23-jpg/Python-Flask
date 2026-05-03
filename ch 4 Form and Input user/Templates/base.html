@@ -2,36 +2,51 @@
 <html lang="en">
 <head>
     <title>
-        {% block title %} My Feedback Site{% endblock%}
+        {% block title %} My Site{% endblock%}
     </title>
-    <style>
+    <!-- <style>
         body{font-family: Arial, Helvetica, sans-serif; padding: 20px;background-color: white;}
         header,footer {background-color: #333;padding: 10px;color: white;text-align: center;}
         nav a {margin: 0 10 px; color: white; text-decoration: none;}
         main{
             background-color: white;padding: 20px;margin-top: 20px;border-radius:5px ;
         }
-    </style>
+    </style> -->
 
 </head>
 <body>
     <header>
-        <h1>Feedback Page</h1>
+        <!-- <h1>Feedback Page</h1> -->
+        <h1>Welcome to my site</h1>
         <nav>
-            <a href="feedback.html"></a>
+            <!-- <a href="feedback.html"></a> -->
+            <a href="/">Home</a>
         </nav>
     </header>
-    <main>
+    <!-- <main>
     {% block  content %}
         
     {% endblock %}
-    </main>
+    </main> -->
 
-    <footer>
+    {% with messages=get_flashed_messages() %}
+    {% if messages %}
+    <ul style="color: green;">
+        {% for msg in messages %}
+        <li> {{msg}}</li>
+    </ul>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+
+    {% block content %}{% endblock %}
+
+    <!-- <footer>
         <p>
             & I AM LEARNING FLASK WITH SAGAR SIR
         </p>
         
-    </footer>
+    </footer> -->
 </body>
 </html>
