@@ -14,13 +14,13 @@ app.secret_key="my-secret-key"
 
 @app.route("/", methods=["GET","POST"])
 def form():
-    if request.form=="POST":
+    if request.method=="POST":
         name=request.form.get("name")
         if not name:
             flash("Name cannot be Empty")
             return redirect(url_for("form"))
         flash(f"Thanks {name},Your Feedback was saved")
-        return render_template("thankyou.html")
+        return redirect(url_for("thankyou"))
     return render_template("form.html")
 
 @app.route("/thankyou")
