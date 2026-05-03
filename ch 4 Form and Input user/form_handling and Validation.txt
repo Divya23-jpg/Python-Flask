@@ -13,5 +13,5 @@ Redirect After Submission
 flash messages:
 Ex:
 we take out paymnent from ATM after taking money message shows transaction successfull
-This is a one time msg
+This is a one time msg.In other word this is a tempropry msg which shows after the particular action
     flash()+get_flashed_message()
