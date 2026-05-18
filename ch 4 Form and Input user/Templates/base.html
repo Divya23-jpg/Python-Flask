@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>
+    <!-- <title>
         {% block title %} My Site{% endblock%}
+    </title> -->
+    <title>
+        {% block title %} Flask WTF Form{% endblock%}
     </title>
     <!-- <style>
         body{font-family: Arial, Helvetica, sans-serif; padding: 20px;background-color: white;}
@@ -15,23 +18,17 @@
 
 </head>
 <body>
-    <header>
-        <!-- <h1>Feedback Page</h1> -->
-        <h1>Welcome to my site</h1>
-        <nav>
-            <!-- <a href="feedback.html"></a> -->
-            <a href="/">Home</a>
-        </nav>
-    </header>
+    <h1>Flask-WTF Registration</h1>
 
 
-    {% with messages=get_flashed_messages() %}
+    {% with messages=get_flashed_messages(with_categories=True) %}
     {% if messages %}
-    <ul style="color: green;">
-        {% for msg in messages %}
-        <li> {{msg}}</li>
+  
+        {% for category,msg in messages %}
+        <!-- <p class={{category}}>{{msg}}</p> -->
+         <p style="color: green;">{{msg}} </p>
         {% endfor %}
-    </ul>
+  
     {% endif %}
     {% endwith %}
 <main>
