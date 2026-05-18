@@ -1,7 +1,7 @@
 """
 We are creating feedback form where user give feedback and we redirect to another page 
 it will show thanks with their username
-Directly pasr on browser:
+Directly pass on browser:
      http://127.0.0.1:5000/feedback
 
 """
@@ -20,12 +20,17 @@ def form():
             flash("Name cannot be Empty")
             return redirect(url_for("form"))
         flash(f"Thanks {name},Your Feedback was saved")
-        return redirect(url_for("thankyou"))
+        return redirect(url_for("thankyou",user=name))
     return render_template("form.html")
 
 @app.route("/thankyou")
 def thankyou():
-    return render_template("thankyou.html")
+    user=request.args.get("user")
+    return render_template("thankyou.html",user=user)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 # @app.route("/feedback",methods=["POST","GET"])
 # def feedback():
