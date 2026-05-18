@@ -23,11 +23,7 @@
             <a href="/">Home</a>
         </nav>
     </header>
-    <!-- <main>
-    {% block  content %}
-        
-    {% endblock %}
-    </main> -->
+
 
     {% with messages=get_flashed_messages() %}
     {% if messages %}
@@ -38,9 +34,9 @@
     </ul>
     {% endif %}
     {% endwith %}
-
+<main>
     {% block content %}{% endblock %}
-
+</main>
     <!-- <footer>
         <p>
             & I AM LEARNING FLASK WITH SAGAR SIR
