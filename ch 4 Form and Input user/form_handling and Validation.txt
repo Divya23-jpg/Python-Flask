@@ -18,3 +18,23 @@ This is a one time msg.In other word this is a tempropry msg which shows after t
 flash(): one time msg to display after action
 get_flash():fash msg ko HTML me dikhane ka kaam krta h by {% with %}
 redirect(url_for("route name")): to redirect page to the given route name
+
+
+
+2.Flask WTF [Web Template Form]:
+understand with example:'
+if we are building login page on a production level and take password, name email etc
+
+problem: 1. it may be possible user provide incomplete data
+         2. It may also possible it provide wrong info like email without @
+         3. WE want to code HTML+backend 
+         4.To secure  our page (CSRF attack : Unknown person fill form)
+solution:
+    (for 1,2 sol )flask WTF provide built in validate for checking
+    (for 3 sol ) Flask WTF allows to build with classes which make easy to manae and easy to code
+
+flask WTF provide:
+    1. python form classes
+    2. Field types (string , passwrd etc)
+    3. Build in validate
+    4. CSRF protection
