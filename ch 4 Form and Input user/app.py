@@ -20,6 +20,8 @@ def form():
             flash("Name cannot be Empty")
             return redirect(url_for("form"))
         flash(f"Thanks {name},Your Feedback was saved")
+        # redirect used for moving one page to another
+        # ! Way to redirect: redirect(url_for("Route_name"))
         return redirect(url_for("thankyou",user=name))
     return render_template("form.html")
 
