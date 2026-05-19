@@ -1,7 +1,0 @@
-                                flask_app
-                                    |
-                       1. run.py           2. app/
-                                          |
-                        __init__.py  routes/    models/     templates/       statics/
-                                        |
-                                1.__init__.py  2.auth.py
