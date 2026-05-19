@@ -7,3 +7,4 @@
                              1.__init__.py  2.auth.py    1.__init__.py  1.base.html     2. auth/     1.css/   2. js/  3. images/
                                                                                              |          |         |
                                                                                         login.html     style.css  script.js 
+                                                                                        
