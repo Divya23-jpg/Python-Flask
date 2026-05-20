@@ -42,3 +42,26 @@ Benifits in flask
 Disadvanatages of SQLite
 1. In big companies there is no use of SQLite because cannot handle  large amount data
 2. Not supported full featured
+
+
+
+What is  SQLALchemy?
+SQLALchemy is a ORM[Object Relational Mapper]
+object: Python classes
+Relational : Relation between tables
+Mapper : Translation betwwen table
+It solves problem:
+
+1. Mannually table creation
+2. Confusing to managing relationships of a tables 
+3. Help to manage long query by making  short query
+
+
+Benifits of SQLALchemy
+1. Write code in python to connect with databse
+2. It works with all major databse (MYSQL,POSTRESQL)
+3. Benifit to Apply any company in flask
+
+
+
+
