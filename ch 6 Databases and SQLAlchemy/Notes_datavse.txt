@@ -7,4 +7,20 @@ Introduction to databases
                                     1. .add()  2. .commit()  3. .filter()   4. .all()  5. .get()
 
 
-                                    
+
+
+
+Problems:
+1. Data gets lost in memory (Data lose after the refresh and not stored anywhere)
+2. File storage Unreliable (We cant Search , filter)
+3. data increase but not handle
+
+
+Solution:
+1. Data permanently stores.
+2. We can fimd , filter, search anything
+3. Data can be handle even millions of data 
+
+
+What is  Databases
+Databases are structured way to store data in the form of table (row and columns in MYSQL)
