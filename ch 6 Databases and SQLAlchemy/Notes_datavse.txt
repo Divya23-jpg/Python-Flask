@@ -1,0 +1,10 @@
+Introduction to databases
+         |
+ SQLALchemy Basics
+         |
+1.Creating Modules   2. Data Types and Relationships  3. Queries
+                                                            |
+                                    1. .add()  2. .commit()  3. .filter()   4. .all()  5. .get()
+
+
+                                    
