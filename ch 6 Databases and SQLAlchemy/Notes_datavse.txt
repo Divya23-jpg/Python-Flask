@@ -24,3 +24,21 @@ Solution:
 
 What is  Databases
 Databases are structured way to store data in the form of table (row and columns in MYSQL)
+
+
+What is SQL Lite
+1.It is a file based database Engine
+2. It built in Python no need to install from anywhere
+3.We can work with small/medium level flask
+4. Stored as data.db
+
+Benifits in flask 
+1.No setup needed
+2.all data stored in file to easy to manage
+3. Great choice to build small app
+
+
+
+Disadvanatages of SQLite
+1. In big companies there is no use of SQLite because cannot handle  large amount data
+2. Not supported full featured
