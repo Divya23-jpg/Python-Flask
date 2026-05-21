@@ -11,3 +11,10 @@ Core Features:
 
 
 Technologies & Tools We will Use:
+
+1. Flask: Our main Python web Framework
+2. SQLite: Simple database stored in a file
+3. SQLAlchemy : ORM to interect with the database using Python
+4. Flask-WTF: Form Validation (like login, add task)
+5. Jinja2: To render Dynamic HTML Templates
+6. Flask-Login: Manage Logged in session (Optional its assignmnet)
