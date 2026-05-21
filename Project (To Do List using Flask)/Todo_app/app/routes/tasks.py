@@ -5,6 +5,7 @@ from app.models import Task
 
 tasks_bp=Blueprint('tasks',__name__)
 
+# ! View Tasks
 @tasks_bp.route('/')
 def view_tasks():
     if 'user' not in session:
@@ -14,6 +15,7 @@ def view_tasks():
     return render_template('tasks.html',tasks=tasks)
 
 
+# ! Add tasks
 @tasks_bp.route('/add,',methods=["POST"])
 def add_tasks():
     if 'user' not in session:
@@ -29,6 +31,7 @@ def add_tasks():
     return redirect(url_for('tasks.view_tasks'))
 
 
+# ! Show tasks Status
 @tasks_bp.route('/toggle/<int:task_id>',methods=["POST"])
 def toggle_status(task_id):
     task=Task.query.get(task_id)
@@ -46,6 +49,7 @@ def toggle_status(task_id):
     return redirect(url_for('tasks.view_tasks'))
 
 
+# ! Cleared all tasks
 @tasks_bp.route('/clear',methods=["POST"])
 def clear_tasks():
     Task.query.delete()
