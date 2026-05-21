@@ -1,0 +1,13 @@
+We are building "A Full Stack To- Do List Web application"
+
+Core Features:
+1.User login: User can login with username / password
+2.User Logout: They can safely log out
+3.Create task: Add new To-do list
+4.View tasks: See all your tasks
+5.Update tasks: Edit task name or mark it as done
+
+
+
+
+Technologies & Tools We will Use:
