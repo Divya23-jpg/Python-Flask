@@ -19,7 +19,7 @@ def login():
         if username==USER_CREDENTIAL['username'] and password==USER_CREDENTIAL['password']:
             # ! Session used for flask remember who last login
             session['user']==username
-            flash("Login Successful")
+            flash("Login Successful",'success')
 
         else:
             flash("Invalid username or password","danger")
