@@ -42,3 +42,16 @@ todo_app/
                 style.css
             js/
                 script.js
+
+
+
+Steps for building
+
+step 1: Define features  (what will do this app)
+step 2: Clean Project structure
+step 3: app setup in __init__.py file called spine
+step 4: models creation
+step 5: routes (which page will come after particular page)
+step 6: HTML templates
+step 7: Css Design
+step 8: database intializing
