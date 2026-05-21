@@ -18,3 +18,27 @@ Technologies & Tools We will Use:
 4. Flask-WTF: Form Validation (like login, add task)
 5. Jinja2: To render Dynamic HTML Templates
 6. Flask-Login: Manage Logged in session (Optional its assignmnet)
+
+
+
+File  Structure
+
+todo_app/
+    run.Py
+    app/
+        __init__.Py
+        models.Py
+        routes/
+            __init__.Py
+            auth.Py
+            tasks.Py
+        templates/
+            base.HTML
+            login.HTML
+            register.HTML
+            tasks.HTML
+        static/
+            css/
+                style.css
+            js/
+                script.js
